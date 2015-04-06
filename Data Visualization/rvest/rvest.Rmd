@@ -1,0 +1,253 @@
+---
+title: "rvest tutorial"
+output:
+  html_document:
+    keep_md: yes
+layout: post
+---
+
+*Justin Law and Jordan Rosenblum*
+
+*April 2, 2015*
+
+## What can you do using rvest? 
+
+The list below is partially borrowed from Hadley Wickham (the creator of rvest) and we will go through some of them throughout this presentation.
+
+- Create an html document from a url, a file on disk or a string containing html with html().
+
+- Select parts of an html document using css selectors: html_nodes(). Learn more about it using vignette("selectorgadget") after installing and loading rvest in R. CSS selectors are used to select elements based on properties such as id, class, type, etc.
+
+    - [Selector Gadget website](http://selectorgadget.com/)
+    
+- Extract components with html_tag() (the name of the tag), html_text() (all text inside the tag), html_attr() (contents of a single attribute) and html_attrs() (all attributes). These are done after using html_nodes().
+
+    - HTML tags normally come in pairs like <tagname>content</tagname>. In the examples we go through below, the content is usually contained within the <body> tag.
+
+- You can also use rvest with XML files: parse with xml(), then extract components using xml_node(), xml_attr(), xml_attrs(), xml_text() and xml_tag().
+
+- Parse tables into data frames with html_table().
+
+- Extract, modify and submit forms with html_form(), set_values() and submit_form().
+
+- Detect and repair encoding problems with guess_encoding() and repair_encoding(). Then pass the correct encoding into html() as an argument.
+
+- Navigate around a website as if you're in a browser with html_session(), jump_to(), follow_link(), back(), forward(), submit_form() and so on. (This is still a work in progress).
+
+- The package also supports using magrittr for commands.
+
+Also have a look at the three links below for some more information:
+
+- [rvest package on Github](https://github.com/hadley/rvest)
+
+- [rvest documentation on CRAN](http://cran.r-project.org/web/packages/rvest/index.html)
+
+- [rstudio blog on rvest](http://blog.rstudio.org/2014/11/24/rvest-easy-web-scraping-with-r/)
+
+## Starting off simple: Scraping The Lego Movie on imdb
+
+```{r, warning=FALSE, message=FALSE}
+#install.packages("rvest")
+
+library(rvest)
+
+# Store web url
+lego_movie <- html("http://www.imdb.com/title/tt1490017/")
+
+#Scrape the website for the movie rating
+rating <- lego_movie %>% 
+  html_nodes("strong span") %>%
+  html_text() %>%
+  as.numeric()
+rating
+
+# Scrape the website for the cast
+cast <- lego_movie %>%
+  html_nodes("#titleCast .itemprop span") %>%
+  html_text()
+cast
+
+#Scrape the website for the url of the movie poster
+poster <- lego_movie %>%
+  html_nodes("#img_primary img") %>%
+  html_attr("src")
+poster
+
+# Extract the first review
+review <- lego_movie %>%
+  html_nodes("#titleUserReviewsTeaser p") %>%
+  html_text()
+review
+```
+
+## Scraping indeed.com for jobs
+
+```{r, warning=FALSE, message=FALSE}
+
+# Submit the form on indeed.com for a job description and location using html_form() and set_values()
+query = "data science"
+loc = "New York"
+session <- html_session("http://www.indeed.com")
+form <- html_form(session)[[1]]
+form <- set_values(form, q = query, l = loc)
+
+# The rvest submit_form function is still under construction and does not work for web sites which build URLs (i.e. GET requests. It does seem to work for POST requests). 
+#url <- submit_form(session, indeed)
+
+# Version 1 of our submit_form function
+submit_form2 <- function(session, form){
+  library(XML)
+  url <- XML::getRelativeURL(form$url, session$url)
+  url <- paste(url,'?',sep='')
+  values <- as.vector(rvest:::submit_request(form)$values)
+  att <- names(values)
+  if (tail(att, n=1) == "NULL"){
+    values <- values[1:length(values)-1]
+    att <- att[1:length(att)-1]
+  }
+  q <- paste(att,values,sep='=')
+  q <- paste(q, collapse = '&')
+  q <- gsub(" ", "+", q)
+  url <- paste(url, q, sep = '')
+  html_session(url)
+}
+
+
+# Version 2 of our submit_form function
+library(httr)
+# Appends element of a list to another without changing variable type of x
+# build_url function uses the httr package and requires a variable of the url class
+appendList <- function (x, val)
+{
+  stopifnot(is.list(x), is.list(val))
+  xnames <- names(x)
+  for (v in names(val)) {
+    x[[v]] <- if (v %in% xnames && is.list(x[[v]]) && is.list(val[[v]]))
+      appendList(x[[v]], val[[v]])
+    else c(x[[v]], val[[v]])
+  }
+  x
+}
+ 
+# Simulating submit_form for GET requests
+submit_geturl <- function (session, form)
+{
+  query <- rvest:::submit_request(form)
+  query$method <- NULL
+  query$encode <- NULL
+  query$url <- NULL
+  names(query) <- "query"
+ 
+  relativeurl <- XML::getRelativeURL(form$url, session$url)
+  basepath <- parse_url(relativeurl)
+ 
+  fullpath <- appendList(basepath,query)
+  fullpath <- build_url(fullpath)
+  fullpath
+}
+
+
+# Submit form and get new url
+session1 <- submit_form2(session, form)
+
+# Get reviews of first company using follow_link()
+session2 <- follow_link(session1, css = "#more_0 li:nth-child(3) a")
+reviews <- session2 %>% html_nodes(".description") %>% html_text()
+reviews
+
+# Get average salary for each job listing based on title and location
+salary_links <- html_nodes(session1, css = "#resultsCol li:nth-child(2) a") %>% html_attr("href")
+salary_links <- paste(session$url, salary_links, sep='')
+salaries <- lapply(salary_links, . %>% html() %>% html_nodes("#salary_display_table .salary") %>% html_text())
+salary <- unlist(salaries)
+
+# Store web url
+data_sci_indeed <- session1
+
+# Get job titles
+job_title <- data_sci_indeed %>% 
+  html_nodes("[itemprop=title]") %>%
+  html_text()
+
+# Get companies
+company <- data_sci_indeed %>%
+  html_nodes("[itemprop=hiringOrganization]") %>%
+  html_text()
+
+# Get locations
+location <- data_sci_indeed %>%
+  html_nodes("[itemprop=addressLocality]") %>%
+  html_text()
+
+# Get descriptions
+description <- data_sci_indeed %>%
+  html_nodes("[itemprop=description]") %>%
+  html_text()
+
+# Get the links
+link <- data_sci_indeed %>%
+  html_nodes("[itemprop=title]") %>%
+  html_attr("href")
+link <- paste('[Link](https://www.indeed.com', link, sep='')
+link <- paste(link, ')', sep='')
+
+indeed_jobs <- data.frame(job_title,company,location,description,salary,link)
+
+library(knitr)
+kable(indeed_jobs, format = "html")
+
+```
+
+- [Useful CSS Rules](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
+- [HTML5 microdata itemprop property](http://www.w3.org/TR/microdata/#names:-the-itemprop-attribute)
+
+## More examples with LinkedIn
+
+```{r, warning=FALSE, message=FALSE, fig.width=4, fig.height=4}
+# Attempt to crawl LinkedIn, requires useragent to access Linkedin Sites
+uastring <- "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36"
+session <- html_session("https://www.linkedin.com/job/", user_agent(uastring))
+form <- html_form(session)[[1]]
+form <- set_values(form, keywords = "Data Science", location="New York")
+ 
+new_url <- submit_geturl(session,form)
+new_session <- html_session(new_url, user_agent(uastring))
+jobtitle <- new_session %>% html_nodes(".job [itemprop=title]") %>% html_text
+company <- new_session %>% html_nodes(".job [itemprop=name]") %>% html_text
+location <- new_session %>% html_nodes(".job [itemprop=addressLocality]") %>% html_text
+description <- new_session %>% html_nodes(".job [itemprop=description]") %>% html_text
+url <- new_session %>% html_nodes(".job [itemprop=title]") %>% html_attr("href")
+url <- paste(url, ')', sep='')
+url <- paste('[Link](', url, sep='')
+df <- data.frame(jobtitle, company, location, url)
+
+df %>% kable
+```
+
+## Attemping to scrape Columbia LionShare
+
+```{r, warning=FALSE, message=FALSE}
+# Attempt to crawl Columbia Lionshare for jobs
+session <- html_session("http://www.careereducation.columbia.edu/lionshare")
+form <- html_form(session)[[1]]
+form <- set_values(form, username = "uni")
+#Below code commented out in Markdown
+
+pw <- .rs.askForPassword("Password?")
+form <- set_values(form, password = pw)
+rm(pw)
+session2 <- submit_form(session, form)
+session2 <- follow_link(session2, "Job")
+form2 <- html_form(session2)[[1]]
+form2 <- set_values(form2, PositionTypes = 7, Keyword = "Data")
+session3 <- submit_form(session2, form2)
+
+# Unable to scrape because the table containing the job data uses javascript and doesn't load soon enough for rvest to collect information
+
+```
+
+- [Selenium, automating web browsers](http://www.seleniumhq.org/)
+
+> If you are webscraping with Python chances are that you have already tried urllib, httplib, requests, etc. These are excellent libraries, but some websites don't like to be webscraped. In these cases you may need to disguise your webscraping bot as a human being. Selenium is just the tool for that. Selenium is a webdriver: it takes control of your browser, which then does all the work. Hence what the website "sees" is Chrome or Firefox or IE; it does not see Python or Selenium. That makes it a lot harder for the website to tell your bot from a human being.  
+
+- [Selenium tutorial](http://thiagomarzagao.com/2013/11/12/webscraping-with-selenium-part-1/)

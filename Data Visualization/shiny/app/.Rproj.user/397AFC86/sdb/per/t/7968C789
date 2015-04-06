@@ -1,0 +1,16 @@
+{
+    "contents" : "library(shiny)\nlibrary(ggvis)\nlibrary(lubridate)\n\nshinyUI(fixedPage(\n  includeScript(\"chat.js\"),\n  theme=\"bootstrap.css\",\n  \n  tags$div(class='titles',\n    titlePanel(\"STATS\"),\n    h3(\"Buildings\"),\n    h4(\"number of buildings over time\")\n  ),\n  \n  fixedRow(\n\n    column(8,\n           ggvisOutput(\"ggvis\")\n           ),\n    \n    column(4,\n           tags$div(class=\"pbuilds\",\n#            h4(\"Player 1\"),\n                    tags$div(class = \"p1build\",\n                            strong(\"Totakeke\"),\n                            tableOutput(\"build1\")),\n                    tags$div(class = \"p2build\",\n                            strong(\"Ms. Production\"),\n                            tableOutput(\"build2\")),\n                    tags$div(class = \"p3build\",\n                            strong(\"Mr. Sabotage\"),\n                            tableOutput(\"build3\")),\n                    tags$div(class = \"p4build\",\n                            strong(\"Ms. Launch\"),\n                            tableOutput(\"build4\"))\n                    )\n    \n  ),\n  \n  fixedRow(\n    column(8,\n           wellPanel(\n             sliderInput(\"timebar\",\n                         \"Time\",\n                         min = 0,\n                         max = max(minute(plotdata$Time))+1,\n                         value = max(minute(plotdata$Time))+1,\n                         animate = animationOptions(interval=500),\n                         step=0.5\n                         )\n\n           )\n    ),\n    column(4,\n             uiOutput(\"chat\")\n           )\n    )\n    \n  )\n  )\n)\n",
+    "created" : 1427163137982.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3648214653",
+    "id" : "7968C789",
+    "lastKnownWriteTime" : 1427170582,
+    "path" : "~/GitHub/edav/assets/justin/app/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

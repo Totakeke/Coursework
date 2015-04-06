@@ -1,0 +1,148 @@
+Time,Building,Action,Adjacency,Distance,Number,Buildings,Resource,Player,Message
+0:00,Expansive HQ,Founding,0,0,0,0,,Totakeke,Totakeke has founded a Expansive HQ
+0:03,Metal Mine,Build,0,0,1,1,3I,Totakeke,Totakeke has built a Metal Mine
+0:04,Scientific HQ,Founding,0,0,0,0,,Mr. Sabotage,Mr. Sabotage has founded a Scientific HQ
+0:06,Hydroponic Farm,Build,0,8,1,1,,Mr. Sabotage,Mr. Sabotage has built a Hydroponic Farm
+0:06,Steel Mill,Build,0,0,1,2,,Totakeke,Totakeke has built a Steel Mill
+0:07,Steel Mill,Build,1,0,1,3,,Totakeke,Totakeke has built a Steel Mill
+0:16,Steel Mill,Build,0,0,1,2,,Mr. Sabotage,Mr. Sabotage has built a Steel Mill
+0:16,Scavenger HQ,Founding,0,0,0,0,,Ms. Launch,Ms. Launch has founded a Scavenger HQ
+0:17,Elemental Quarry,Build,0,3,1,1,1C,Ms. Launch,Ms. Launch has built a Elemental Quarry
+0:17,Expansive HQ,Founding,0,0,0,0,,Ms. Production,Ms. Production has founded a Expansive HQ
+0:19,Wind Turbine,Build,0,2,1,3,,Mr. Sabotage,Mr. Sabotage has built a Wind Turbine
+0:19,Steel Mill,Build,0,0,1,1,,Ms. Production,Ms. Production has built a Steel Mill
+0:19,Metal Mine,Build,0,11,1,2,3I,Ms. Production,Ms. Production has built a Metal Mine
+0:21,Solar Panel,Build,0,2,1,3,,Ms. Production,Ms. Production has built a Solar Panel
+0:36,Hydroponic Farm,Build,0,0,1,2,,Ms. Launch,Ms. Launch has built a Hydroponic Farm
+0:36,Water Pump,Build,0,20,1,3,2W,Ms. Launch,Ms. Launch has built a Water Pump
+1:07,Metal Mine,Build,0,15,1,4,"2I, 1A",Ms. Production,Ms. Production has built a Metal Mine
+1:07,HQ,Upgrade,0,0,0,3,,Totakeke,Totakeke has upgraded their HQ
+1:13,Steel Mill,Build,2,0,1,4,,Totakeke,Totakeke has built a Steel Mill
+1:14,Metal Mine,Build,1,0,1,5,1I,Totakeke,Totakeke has built a Metal Mine
+1:34,Metal Mine,Build,0,4,1,6,2A,Totakeke,Totakeke has built a Metal Mine
+1:37,Metal Mine,Build,1,5,1,7,"1I, 1A",Totakeke,Totakeke has built a Metal Mine
+1:39,Metal Mine,Build,0,5,1,4,2A,Mr. Sabotage,Mr. Sabotage has built a Metal Mine
+1:39,Metal Mine,Build,0,12,1,4,"1I, 1A",Ms. Launch,Ms. Launch has built a Metal Mine
+2:34,Steel Mill,Scrap,1,0,-1,6,,Totakeke,Totakeke has scrapped a Steel Mill
+2:48,Solar Panel,Build,0,0,1,7,,Totakeke,Totakeke has built a Solar Panel
+3:05,Metal Mine,Scrap,1,0,-1,6,1I,Totakeke,Totakeke has scrapped a Metal Mine
+3:06,Electrolysis Reactor,Build,0,22,1,5,,Mr. Sabotage,Mr. Sabotage has built a Electrolysis Reactor
+3:18,HQ,Upgrade,0,0,0,4,,Ms. Production,Ms. Production has upgraded their HQ
+3:18,Steel Mill,Build,1,0,1,7,,Totakeke,Totakeke has built a Steel Mill
+3:19,HQ,Upgrade,0,0,0,4,,Ms. Launch,Ms. Launch has upgraded their HQ
+3:33,Elemental Quarry,Build,1,4,1,5,1C,Ms. Launch,Ms. Launch has built a Elemental Quarry
+3:40,Water Pump,Build,0,15,1,5,1W,Ms. Production,Ms. Production has built a Water Pump
+3:47,HQ,Upgrade,0,0,0,7,,Totakeke,Totakeke has upgraded their HQ
+3:54,Elemental Quarry,Build,0,17,1,8,2S,Totakeke,Totakeke has built a Elemental Quarry
+3:58,Electrolysis Reactor,Build,0,0,1,6,,Ms. Production,Ms. Production has built a Electrolysis Reactor
+3:59,Solar Panel,Build,0,1,1,6,,Ms. Launch,Ms. Launch has built a Solar Panel
+4:01,Glass Furnace,Build,0,0,1,9,,Totakeke,Totakeke has built a Glass Furnace
+4:02,Elemental Quarry,Build,0,2,1,7,,Ms. Production,Ms. Production has built a Elemental Quarry
+4:10,Electrolysis Reactor,Build,0,0,1,7,,Ms. Launch,Ms. Launch has built a Electrolysis Reactor
+4:12,Water Pump,Build,1,16,1,8,1W,Ms. Production,Ms. Production has built a Water Pump
+4:13,Glass Furnace,Build,1,0,1,10,,Totakeke,Totakeke has built a Glass Furnace
+4:13,Glass Furnace,Build,2,0,1,11,,Totakeke,Totakeke has built a Glass Furnace
+4:32,Electrolysis Reactor,Build,1,0,1,9,,Ms. Production,Ms. Production has built a Electrolysis Reactor
+4:32,Elemental Quarry,Build,1,16,1,12,1S,Totakeke,Totakeke has built a Elemental Quarry
+4:57,HQ,Upgrade,0,0,0,5,,Mr. Sabotage,Mr. Sabotage has upgraded their HQ
+5:02,Steel Mill,Build,1,0,1,6,,Mr. Sabotage,Mr. Sabotage has built a Steel Mill
+5:05,Hydroponic Farm,Scrap,0,0,-1,6,,Ms. Launch,Ms. Launch has scrapped a Hydroponic Farm
+5:06,Wind Turbine,Build,0,0,1,7,,Ms. Launch,Ms. Launch has built a Wind Turbine
+5:15,Solar Panel,Build,1,0,1,13,,Totakeke,Totakeke has built a Solar Panel
+5:26,Wind Turbine,Build,0,6,1,10,,Ms. Production,Ms. Production has built a Wind Turbine
+5:36,Elemental Quarry,Build,0,0,1,7,1S,Mr. Sabotage,Mr. Sabotage has built a Elemental Quarry
+5:42,Electronics Factory,Build,0,9,1,8,,Mr. Sabotage,Mr. Sabotage has built a Electronics Factory
+5:42,Metal Mine,Scrap,0,0,-1,12,3I,Totakeke,Totakeke has scrapped a Metal Mine
+5:51,Solar Panel,Build,2,0,1,13,,Totakeke,Totakeke has built a Solar Panel
+6:21,Metal Mine,Build,0,16,1,14,3I,Totakeke,Totakeke has built a Metal Mine
+6:35,HQ,Upgrade,0,0,0,14,,Totakeke,Totakeke has upgraded their HQ
+6:38,HQ,Upgrade,0,0,0,10,,Ms. Production,Ms. Production has upgraded their HQ
+6:39,Elemental Quarry,Build,1,18,1,15,1S,Totakeke,Totakeke has built a Elemental Quarry
+6:43,Chemical Lab,Build,0,0,1,11,,Ms. Production,Ms. Production has built a Chemical Lab
+6:47,Electrolysis Reactor,Build,2,0,1,12,,Ms. Production,Ms. Production has built a Electrolysis Reactor
+6:56,Water Pump,Build,0,27,1,13,1W,Ms. Production,Ms. Production has built a Water Pump
+6:58,Wind Turbine,Build,1,5,1,14,,Ms. Production,Ms. Production has built a Wind Turbine
+7:10,Patent Lab,Build,0,0,1,16,,Totakeke,Totakeke has built a Patent Lab
+7:24,Electronics Factory,Build,1,10,1,9,,Mr. Sabotage,Mr. Sabotage has built a Electronics Factory
+7:36,Chemical Lab,Scrap,0,0,-1,13,,Ms. Production,Ms. Production has scrapped a Chemical Lab
+7:37,Pleasure Dome,Build,0,0,1,14,,Ms. Production,Ms. Production has built a Pleasure Dome
+7:39,Elemental Quarry,Build,0,6,1,17,1C,Totakeke,Totakeke has built a Elemental Quarry
+7:39,Elemental Quarry,Build,1,0,1,18,1C,Totakeke,Totakeke has built a Elemental Quarry
+7:52,Chemical Lab,Build,0,0,1,19,,Totakeke,Totakeke has built a Chemical Lab
+8:00,Chemical Lab,Build,0,0,1,15,,Ms. Production,Ms. Production has built a Chemical Lab
+8:11,HQ,Upgrade,0,0,0,19,,Totakeke,Totakeke has upgraded their HQ
+9:06,Solar Panel,Build,1,0,1,20,,Totakeke,Totakeke has built a Solar Panel
+9:27,Electronics Factory,Build,0,0,1,21,,Totakeke,Totakeke has built a Electronics Factory
+9:27,Electronics Factory,Build,1,0,1,22,,Totakeke,Totakeke has built a Electronics Factory
+9:28,Electronics Factory,Build,2,0,1,23,,Totakeke,Totakeke has built a Electronics Factory
+9:30,HQ,Upgrade,0,0,0,15,,Ms. Production,Ms. Production has upgraded their HQ
+9:30,Electronics Factory,Build,2,0,1,24,,Totakeke,Totakeke has built a Electronics Factory
+9:35,Steel Mill,Build,1,0,1,16,,Ms. Production,Ms. Production has built a Steel Mill
+9:38,Elemental Quarry,Build,0,12,1,17,1C,Ms. Production,Ms. Production has built a Elemental Quarry
+9:42,HQ,Upgrade,0,0,0,9,,Mr. Sabotage,Mr. Sabotage has upgraded their HQ
+9:42,Wind Turbine,Build,1,1,1,10,,Mr. Sabotage,Mr. Sabotage has built a Wind Turbine
+9:46,Chemical Lab,Build,1,0,1,18,,Ms. Production,Ms. Production has built a Chemical Lab
+9:48,Water Pump,Build,0,21,1,11,,Mr. Sabotage,Mr. Sabotage has built a Water Pump
+9:54,Solar Panel,Build,1,2,1,19,,Ms. Production,Ms. Production has built a Solar Panel
+9:56,Hydroponic Farm,Build,0,0,1,20,,Ms. Production,Ms. Production has built a Hydroponic Farm
+10:03,Hydroponic Farm,Build,0,22,1,12,,Mr. Sabotage,Mr. Sabotage has built a Hydroponic Farm
+10:24,HQ,Upgrade,0,0,0,7,,Ms. Launch,Ms. Launch has upgraded their HQ
+10:25,Water Pump,Build,1,21,1,8,1W,Ms. Launch,Ms. Launch has built a Water Pump
+10:27,Elemental Quarry,Build,0,0,1,9,1S,Ms. Launch,Ms. Launch has built a Elemental Quarry
+10:27,Solar Panel,Scrap,2,0,-1,23,,Totakeke,Totakeke has scrapped a Solar Panel
+10:28,Water Pump,Build,0,0,1,24,3W,Totakeke,Totakeke has built a Water Pump
+10:33,Water Pump,Build,1,28,1,21,1W,Ms. Production,Ms. Production has built a Water Pump
+10:35,Electrolysis Reactor,Build,1,0,1,10,,Ms. Launch,Ms. Launch has built a Electrolysis Reactor
+10:38,Water Pump,Scrap,0,0,-1,23,3W,Totakeke,Totakeke has scrapped a Water Pump
+10:40,Solar Panel,Scrap,1,0,-1,22,,Totakeke,Totakeke has scrapped a Solar Panel
+10:42,Water Pump,Build,0,0,1,23,1W,Totakeke,Totakeke has built a Water Pump
+10:46,Hacker Array,Build,0,0,1,13,,Mr. Sabotage,Mr. Sabotage has built a Hacker Array
+10:49,Offworld Market,Build,0,0,1,24,,Totakeke,Totakeke has built a Offworld Market
+11:00,Metal Mine,Scrap,1,4,-1,23,2A,Totakeke,Totakeke has scrapped a Metal Mine
+11:01,Metal Mine,Scrap,0,5,-1,22,"1A, 1I",Totakeke,Totakeke has scrapped a Metal Mine
+11:05,Hydroponic Farm,Build,0,4,1,23,,Totakeke,Totakeke has built a Hydroponic Farm
+11:06,Hydroponic Farm,Build,1,5,1,24,,Totakeke,Totakeke has built a Hydroponic Farm
+11:10,Hydroponic Farm,Build,2,4,1,25,,Totakeke,Totakeke has built a Hydroponic Farm
+11:16,Electrolysis Reactor,Scrap,1,0,-1,9,,Ms. Launch,Ms. Launch has scrapped a Electrolysis Reactor
+11:17,Pleasure Dome,Build,0,0,1,10,,Ms. Launch,Ms. Launch has built a Pleasure Dome
+11:20,Water Pump,Build,1,0,1,26,3W,Totakeke,Totakeke has built a Water Pump
+11:44,Elemental Quarry,Scrap,1,16,-1,25,1S,Totakeke,Totakeke has scrapped a Elemental Quarry
+11:50,Chemical Lab,Build,0,16,1,26,,Totakeke,Totakeke has built a Chemical Lab
+12:27,HQ,Upgrade,0,0,0,21,,Ms. Production,Ms. Production has upgraded their HQ
+12:31,Steel Mill,Build,2,0,1,22,,Ms. Production,Ms. Production has built a Steel Mill
+12:31,Hydroponic Farm,Build,1,0,1,23,,Ms. Production,Ms. Production has built a Hydroponic Farm
+12:39,Glass Furnace,Build,0,0,1,24,,Ms. Production,Ms. Production has built a Glass Furnace
+12:47,Metal Mine,Build,1,15,1,25,1A,Ms. Production,Ms. Production has built a Metal Mine
+12:57,Solar Panel,Build,2,3,1,26,,Ms. Production,Ms. Production has built a Solar Panel
+12:57,Steel Mill,Build,2,0,1,27,,Ms. Production,Ms. Production has built a Steel Mill
+13:12,HQ,Upgrade,0,0,0,13,,Mr. Sabotage,Mr. Sabotage has upgraded their HQ
+13:14,Metal Mine,Build,1,6,1,14,,Mr. Sabotage,Mr. Sabotage has built a Metal Mine
+13:17,Wind Turbine,Build,1,1,1,15,,Mr. Sabotage,Mr. Sabotage has built a Wind Turbine
+13:35,Steel Mill,Build,2,0,1,16,,Mr. Sabotage,Mr. Sabotage has built a Steel Mill
+13:50,HQ,Upgrade,0,0,0,10,,Ms. Launch,Ms. Launch has upgraded their HQ
+13:52,Electrolysis Reactor,Build,1,0,1,11,,Ms. Launch,Ms. Launch has built a Electrolysis Reactor
+13:52,Steel Mill,Build,0,0,1,12,,Ms. Launch,Ms. Launch has built a Steel Mill
+13:53,Mr. Sabotage,Takeover,0,0,-16,0,,Mr. Sabotage,
+13:53,Water Pump,Build,2,21,1,13,,Ms. Launch,Ms. Launch has built a Water Pump
+13:53,Metal Mine,Build,0,24,1,14,2A,Ms. Launch,Ms. Launch has built a Metal Mine
+13:53,Mr. Sabotage,Takeover,0,0,16,42,,Totakeke,Totakeke has taken over Mr. Sabotage
+13:57,Electrolysis Reactor,Build,2,0,1,28,,Ms. Production,Ms. Production has built a Electrolysis Reactor
+14:34,HQ,Upgrade,0,0,0,42,,Totakeke,Totakeke has upgraded their HQ
+14:35,Chemical Lab,Build,1,0,1,43,,Totakeke,Totakeke has built a Chemical Lab
+14:36,Chemical Lab,Scrap,1,0,-1,27,,Ms. Production,Ms. Production has scrapped a Chemical Lab
+14:36,Chemical Lab,Build,1,0,1,44,,Totakeke,Totakeke has built a Chemical Lab
+14:37,Offworld Market,Build,0,0,1,28,,Ms. Production,Ms. Production has built a Offworld Market
+14:43,Electrolysis Reactor,Build,0,0,1,45,,Totakeke,Totakeke has built a Electrolysis Reactor
+14:43,Electrolysis Reactor,Build,1,0,1,46,,Totakeke,Totakeke has built a Electrolysis Reactor
+14:44,Electrolysis Reactor,Build,2,0,1,47,,Totakeke,Totakeke has built a Electrolysis Reactor
+14:58,Wind Turbine,Build,1,0,1,15,,Ms. Launch,Ms. Launch has built a Wind Turbine
+15:20,Chemical Lab,Scrap,0,0,-1,27,,Ms. Production,Ms. Production has scrapped a Chemical Lab
+15:21,Offworld Market,Build,0,0,1,28,,Ms. Production,Ms. Production has built a Offworld Market
+15:40,HQ,Upgrade,0,0,0,15,,Ms. Launch,Ms. Launch has upgraded their HQ
+15:40,Solar Panel,Build,1,0,1,16,,Ms. Launch,Ms. Launch has built a Solar Panel
+15:45,Ms. Launch,Takeover,0,0,-16,0,,Ms. Launch,
+15:45,Ms. Launch,Takeover,0,0,16,63,,Totakeke,Totakeke has taken over Ms. Launch
+15:55,Electrolysis Reactor,Build,2,0,1,64,,Totakeke,Totakeke has built a Electrolysis Reactor
+15:57,Electrolysis Reactor,Build,2,0,1,65,,Totakeke,Totakeke has built a Electrolysis Reactor
+17:22,Ms. Production,Takeover,0,0,-28,0,,Ms. Production,
+17:22,Ms. Production,Takeover,0,0,28,93,,Totakeke,Totakeke has taken over Ms. Production

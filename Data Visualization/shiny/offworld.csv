@@ -1,0 +1,66 @@
+Time,Summary,Building,Action,Number,Buildings,Adj,Materials,Message
+0:34,Metal Mine,Metal Mine,Build,1,1,0,Iron,Player 1 has built a Metal Mine
+0:37,Metal Mine,Metal Mine,Build,1,2,0,Aluminum,Player 1 has built a Metal Mine
+0:46,Steel Mill,Steel Mill,Build,1,3,0,,Player 1 has built a Steel Mill
+1:43,Elemental Quarry,Elemental Quarry,Build,1,4,0,Silicon,Player 1 has built a Elemental Quarry
+1:46,Steel Mill,Steel Mill,Build,1,5,1,,Player 1 has built a Steel Mill
+1:52,Steel Mill,Steel Mill,Build,1,6,2,,Player 1 has built a Steel Mill
+2:40,Solar Panel,Solar Panel,Build,1,7,0,,Player 1 has built a Solar Panel
+3:20,Solar Panel,Solar Panel,Build,1,8,1,,Player 1 has built a Solar Panel
+4:09,Solar Panel,Solar Panel,Build,1,9,2,,Player 1 has built a Solar Panel
+4:22,Steel Mill,Steel Mill,Build,1,10,1,,Player 1 has built a Steel Mill
+4:28,Steel Mill,Steel Mill,Build,1,11,3,,Player 1 has built a Steel Mill
+5:11,Del Steel Mill,Steel Mill,Destroy,-1,10,2,,Player 1 has destroyed a Steel Mill
+5:12,Patent Lab,Patent Lab,Build,1,11,0,,Player 1 has built a Patent Lab
+5:36,Geothermal Plant,Geothermal Plant,Build,1,12,0,,Player 1 has built a Geothermal Plant
+8:02,Glass Furnace,Glass Furnace,Build,1,13,0,,Player 1 has built a Glass Furnace
+8:04,Glass Furnace,Glass Furnace,Build,1,14,1,,Player 1 has built a Glass Furnace
+8:13,Del Glass Furnace,Glass Furnace,Destroy,-1,13,1,,Player 1 has destroyed a Glass Furnace
+8:14,Del Glass Furnace,Glass Furnace,Destroy,-1,12,0,,Player 1 has destroyed a Glass Furnace
+8:19,Glass Furnace,Glass Furnace,Build,1,13,0,,Player 1 has built a Glass Furnace
+8:20,Glass Furnace,Glass Furnace,Build,1,14,1,,Player 1 has built a Glass Furnace
+8:49,Elemental Quarry,Elemental Quarry,Build,1,15,0,Carbon,Player 1 has built a Elemental Quarry
+9:23,Glass Furnace,Glass Furnace,Build,1,16,2,,Player 1 has built a Glass Furnace
+10:00,Elemental Quarry,Elemental Quarry,Build,1,17,1,Carbon,Player 1 has built a Elemental Quarry
+10:09,Electronics Factory,Electronics Factory,Build,1,18,0,,Player 1 has built a Electronics Factory
+10:09,Electronics Factory,Electronics Factory,Build,1,19,1,,Player 1 has built a Electronics Factory
+10:20,Electronics Factory,Electronics Factory,Build,1,20,2,,Player 1 has built a Electronics Factory
+10:27,Electronics Factory,Electronics Factory,Build,1,21,2,,Player 1 has built a Electronics Factory
+10:55,Del Solar Panel,Solar Panel,Destroy,-1,20,2,,Player 1 has destroyed a Solar Panel
+10:57,Del Solar Panel,Solar Panel,Destroy,-1,19,1,,Player 1 has destroyed a Solar Panel
+10:59,Del Solar Panel,Solar Panel,Destroy,-1,18,0,,Player 1 has destroyed a Solar Panel
+11:09,Ice Condenser,Ice Condenser,Build,1,19,0,,Player 1 has built a Ice Condenser
+11:09,Ice Condenser,Ice Condenser,Build,1,20,1,,Player 1 has built a Ice Condenser
+11:50,Ice Condenser,Ice Condenser,Build,1,21,2,,Player 1 has built a Ice Condenser
+13:15,Del Steel Mill,Steel Mill,Destroy,-1,20,3,,Player 1 has destroyed a Steel Mill
+13:16,Del Steel Mill,Steel Mill,Destroy,-1,19,2,,Player 1 has destroyed a Steel Mill
+13:18,Del Steel Mill,Steel Mill,Destroy,-1,18,1,,Player 1 has destroyed a Steel Mill
+13:19,Del Steel Mill,Steel Mill,Destroy,-1,17,0,,Player 1 has destroyed a Steel Mill
+13:38,Electrolysis Reactor,Electrolysis Reactor,Build,1,18,0,,Player 1 has built a Electrolysis Reactor
+13:38,Electrolysis Reactor,Electrolysis Reactor,Build,1,19,1,,Player 1 has built a Electrolysis Reactor
+13:38,Electrolysis Reactor,Electrolysis Reactor,Build,1,20,2,,Player 1 has built a Electrolysis Reactor
+13:39,Electrolysis Reactor,Electrolysis Reactor,Build,1,21,2,,Player 1 has built a Electrolysis Reactor
+14:08,Del Metal Mine,Metal Mine,Destroy,-1,20,0,Iron,Player 1 has destroyed a Metal Mine
+14:10,Offworld Market,Offworld Market,Build,1,21,0,,Player 1 has built a Offworld Market
+14:25,Del Offworld Market,Offworld Market,Destroy,-1,20,0,,Player 1 has destroyed a Offworld Market
+14:29,Del Electrolysis Reactor,Electrolysis Reactor,Destroy,-1,19,3,,Player 1 has destroyed a Electrolysis Reactor
+14:32,Offworld Market,Offworld Market,Build,1,20,0,,Player 1 has built a Offworld Market
+14:40,Electrolysis Reactor,Electrolysis Reactor,Build,1,21,1,,Player 1 has built a Electrolysis Reactor
+14:44,Del Offworld Market,Offworld Market,Destroy,-1,20,0,,Player 1 has destroyed a Offworld Market
+14:52,Del Electrolysis Reactor,Electrolysis Reactor,Destroy,-1,19,0,,Player 1 has destroyed a Electrolysis Reactor
+14:54,Offworld Market,Offworld Market,Build,1,20,0,,Player 1 has built a Offworld Market
+15:43,Electrolysis Reactor,Electrolysis Reactor,Build,1,21,3,,Player 1 has built a Electrolysis Reactor
+17:50,Del Electrolysis Reactor,Electrolysis Reactor,Destroy,-1,20,2,,Player 1 has destroyed a Electrolysis Reactor
+17:52,Offworld Market,Offworld Market,Build,1,21,0,,Player 1 has built a Offworld Market
+18:11,Del Glass Furnace,Glass Furnace,Destroy,-1,20,2,,Player 1 has destroyed a Glass Furnace
+18:32,Glass Furnace,Glass Furnace,Build,1,21,2,,Player 1 has built a Glass Furnace
+18:35,Del Electrolysis Reactor,Electrolysis Reactor,Destroy,-1,20,2,,Player 1 has destroyed a Electrolysis Reactor
+18:37,Hacker Array,Hacker Array,Build,1,21,0,,Player 1 has built a Hacker Array
+22:00,Del Glass Furnace,Glass Furnace,Destroy,-1,20,2,,Player 1 has destroyed a Glass Furnace
+22:01,Del Glass Furnace,Glass Furnace,Destroy,-1,19,1,,Player 1 has destroyed a Glass Furnace
+22:03,Del Glass Furnace,Glass Furnace,Destroy,-1,18,0,,Player 1 has destroyed a Glass Furnace
+22:07,Electronics Factory,Electronics Factory,Build,1,19,0,,Player 1 has built a Electronics Factory
+22:07,Electronics Factory,Electronics Factory,Build,1,20,1,,Player 1 has built a Electronics Factory
+22:08,Electronics Factory,Electronics Factory,Build,1,21,2,,Player 1 has built a Electronics Factory
+22:19,Del Patent Lab,Patent Lab,Destroy,-1,20,0,,Player 1 has destroyed a Patent Lab
+22:22,Hydrolysis Reactor,Hydrolysis Reactor,Build,1,21,1,,Player 1 has built a Hydrolysis Reactor

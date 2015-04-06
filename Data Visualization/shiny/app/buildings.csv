@@ -1,0 +1,21 @@
+Building,Alias,Image,Category
+Geothermal Plant,GP,images/Building_geothermal_plant.png,Power
+Solar Panel,SP,images/Building_solar_panel.png,Power
+Wind Turbine,WT,images/Building_wind_turbine.png,Power
+Electrolysis Reactor,ES,images/Building_electrolysis_reactor.png,Life Support
+Hydroponic Farm,HF,images/Building_hydroponic_farm.png,Life Support
+Water Pump,WP,images/Building_water_pump.png,Life Support
+Chemicals Lab,CL,images/Building_chemicals_lab.png,Factories
+Electronics Factory,EF,images/Building_electronics_factory.png,Factories
+Glass Furnace,GF,images/Building_glass_furnace.png,Factories
+Steel Mill,SM,images/Building_steel_mill.png,Factories
+Dry Ice Condenser,DI,images/Building_dry_ice_condenser.png,Mines
+Ice Condenser,IC,images/Building_ice_condenser.png,Mines
+Elemental Quarry,EQ,images/Building_elemental_quarry.png,Mines
+Metal Mine,MM,images/Building_metal_mine.png,Mines
+Engineering Lab,EL,images/Building_engineering_lab.png,Advanced
+Hacker Array,HA,images/Building_hacker_array.png,Advanced
+Offworld Market,OM,images/Building_offworld_market.png,Advanced
+Patent Lab,PL,images/Building_patent_lab.png,Advanced
+Pleasure Dome,PD,images/Building_pleasure_dome.png,Advanced
+HQ,HQ,images/hq.png,HQ

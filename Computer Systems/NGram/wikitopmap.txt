@@ -1,0 +1,10 @@
+http www theanarchistlibrary org html	20	Anarchism:12
+http web archive org web	12	Anarchism:12
+archiveurl http web archive org	12	Anarchism:12
+web archive org web http	11	Anarchism:12
+http books google com books	8	Anarchism:12
+cite web url http www	8	Anarchism:12
+books google com books id	8	Anarchism:12
+archive org web http www	8	Anarchism:12
+documentary history of libertarian ideas	7	Anarchism:12
+anarchism a history of libertarian	7	Anarchism:12
